@@ -514,3 +514,10 @@ select:focus {
     grid-template-columns: 1fr;
   }
 }
+
+.subtasks {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}

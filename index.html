@@ -112,38 +112,51 @@
                 </div>
 
                 <div class="row">
-                  <div class="field">
-                    <label>Subtasks</label>
-                    <div id="subtaskList">
-                      <!-- Dynamic inputs go here -->
-                    </div>
-                    <button
-                      type="button"
-                      id="addSubtaskBtn"
-                      class="btn ghost sm"
-                      style="margin-top: 0.5rem; justify-content: center"
-                    >
-                      + Add Step
-                    </button>
-                  </div>
-                </div>
+  <div class="field">
+    <label>Subtasks</label>
 
-                <div class="row">
-                  <div class="field">
-                    <label for="due">Due date</label>
-                    <input id="due" type="date" />
-                  </div>
-                  <div
-                    style="
-                      flex: 0 0 120px;
-                      display: flex;
-                      flex-direction: column;
-                      justify-content: flex-end;
-                    "
-                  >
-                    <button class="btn" id="saveBtn">Add Task</button>
-                  </div>
-                </div>
+    <div id="subtaskList">
+      <!-- Dynamic inputs go here -->
+    </div>
+
+    <button
+      type="button"
+      id="addSubtaskBtn"
+      class="btn ghost sm"
+      style="margin-top: 0.5rem; justify-content: center"
+    >
+      + Add Step
+    </button>
+
+    <button
+      type="button"
+      id="aiBreakdownBtn"
+      class="btn ghost sm"
+      style="margin-top: 0.5rem; justify-content: center"
+    >
+      ✨ Generate Steps with AI
+    </button>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="field">
+    <label for="due">Due date</label>
+    <input id="due" type="date" />
+  </div>
+
+  <div
+    style="
+      flex: 0 0 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    "
+  >
+    <button class="btn" id="saveBtn">Add Task</button>
+  </div>
+</div>
 
                 <input type="hidden" id="editingId" />
               </form>
